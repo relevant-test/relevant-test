@@ -27,7 +27,23 @@ p {
     line-height: 29px;
     color: #5e5e5e;
 }
-
+#totop {
+    display: none;
+    position: fixed;
+    background-color: #E3B748;
+    background-image: url(../img/totop.png);
+    background-repeat: no-repeat;
+    -ms-background-position: center center;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    right: 75px;
+    left: inherit;
+    bottom: 55px;
+    z-index: 995;
+    cursor: pointer;
+}
 .section_title {
     text-align: center;
     margin-bottom: 90px;
@@ -679,6 +695,10 @@ p {
 }
 
 @media (max-width: 767px) {
+    #totop {
+        right: 10px;
+        bottom: 40px;
+    }
     .header {
         margin-top: 20px;
     }
@@ -772,6 +792,9 @@ p {
     .team .team-wrap .team-item {
         padding: 10px;
         width: calc(50% - 2 * 15px);
+    }
+    .team .team-wrap .team-item .team-item-img {
+        margin-right: 5px;
     }
     .client-slider-nav {
         display: none;
